@@ -5,6 +5,14 @@ VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HIMS.WebAPI", "HIMS.WebAPI\HIMS.WebAPI.csproj", "{A6F63FFB-27DB-47EF-B088-B5B301FEEECF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HIMS.Presentation", "HIMS.Presentation", "{AA89E160-D0F8-4C6E-BD5F-B1C94383A82B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HIMS.Data", "HIMS.Data", "{256EBFBE-C3B6-4557-8DCC-6922A109E534}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HIMS.Business", "HIMS.Business", "{8BEC2237-83B5-4B74-8A48-E77092ADD4E7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HIMS.Test", "HIMS.Test", "{29117B6C-19AE-4DF1-9B5D-7577018D97C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +26,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A6F63FFB-27DB-47EF-B088-B5B301FEEECF} = {AA89E160-D0F8-4C6E-BD5F-B1C94383A82B}
 	EndGlobalSection
 EndGlobal
