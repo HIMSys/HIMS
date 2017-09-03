@@ -58,8 +58,12 @@
   <ItemGroup>
     <Folder Include="Properties" />
     <Folder Include="Tables" />
+    <Folder Include="SeedData" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\TestTable.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="SeedData\TestTableInit.sql" />
   </ItemGroup>
 </Project>
