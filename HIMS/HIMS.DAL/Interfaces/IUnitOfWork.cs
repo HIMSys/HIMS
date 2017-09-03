@@ -9,7 +9,7 @@ namespace HIMS.DAL.Interfaces
 {
     public interface IUnitOfWork : IDisposable
     {
-        IRepository<TestTable> Tests { get; }
+        IRepository<TestTable> TestTables { get; }
         void Save();
     }
 }
