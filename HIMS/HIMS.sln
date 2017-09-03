@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HIMS.Business", "HIMS.Busin
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HIMS.Test", "HIMS.Test", "{29117B6C-19AE-4DF1-9B5D-7577018D97C9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HIMS.Tests", "HIMS.Tests\HIMS.Tests.csproj", "{EBDAD7FF-83C7-4BAA-9637-6D38C50951CB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,11 +25,16 @@ Global
 		{A6F63FFB-27DB-47EF-B088-B5B301FEEECF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6F63FFB-27DB-47EF-B088-B5B301FEEECF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6F63FFB-27DB-47EF-B088-B5B301FEEECF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBDAD7FF-83C7-4BAA-9637-6D38C50951CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBDAD7FF-83C7-4BAA-9637-6D38C50951CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBDAD7FF-83C7-4BAA-9637-6D38C50951CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBDAD7FF-83C7-4BAA-9637-6D38C50951CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{A6F63FFB-27DB-47EF-B088-B5B301FEEECF} = {AA89E160-D0F8-4C6E-BD5F-B1C94383A82B}
+		{EBDAD7FF-83C7-4BAA-9637-6D38C50951CB} = {29117B6C-19AE-4DF1-9B5D-7577018D97C9}
 	EndGlobalSection
 EndGlobal
