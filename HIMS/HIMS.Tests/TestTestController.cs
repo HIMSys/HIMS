@@ -4,11 +4,12 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace HIMS.Tests
 {
     [TestClass]
-    public class UnitTest1
+    public class TestTestController
     {
         [TestMethod]
-        public void TestMethod1()
+        public void GetTest_ShouldReturnCorrectResponse()
         {
+
         }
     }
 }
