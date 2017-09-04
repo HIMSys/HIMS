@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using HIMS.DAL.Interfaces;
-using HIMS.EntityClasses;
+using HIMS.Data.Interfaces;
+using HIMS.Data;
+using HIMS.Data.EntityClasses;
 
-namespace HIMS.DAL.Repositories
+namespace HIMS.Data.Repositories
 {
     public class EFUnitOfWork : IUnitOfWork
     {
@@ -17,7 +18,7 @@ namespace HIMS.DAL.Repositories
         {
             db = new HIMSDataContext(connectionString);
         }
-        public IRepository<TestTable> TestTables
+        public IRepository<Test> Tests
         {
             get
             {

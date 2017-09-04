@@ -4,12 +4,13 @@ using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using HIMS.DAL.Interfaces;
-using HIMS.EntityClasses;
+using HIMS.Data.Interfaces;
+using HIMS.Data;
+using HIMS.Data.EntityClasses;
 
-namespace HIMS.DAL.Repositories
+namespace HIMS.Data.Repositories
 {
-    public class TestRepository : IRepository<TestTable>
+    public class TestRepository : IRepository<Test>
     {
         private HIMSDataContext db;
 
@@ -18,36 +19,36 @@ namespace HIMS.DAL.Repositories
             this.db = context;
         }
 
-        public IEnumerable<TestTable> GetAll()
+        public IEnumerable<Test> GetAll()
         {
-            return db.TestTables;
+            return db.Tests;
         }
 
-        public TestTable Get(int id)
+        public Test Get(int id)
         {
-            return db.TestTables.Find(id);
+            return db.Tests.Find(id);
         }
 
-        public void Create(TestTable testTable)
+        public void Create(Test test)
         {
-            db.TestTables.Add(testTable);
+            db.Tests.Add(test);
         }
 
-        public void Update(TestTable testTable)
+        public void Update(Test test)
         {
-            db.Entry(testTable).State = EntityState.Modified;
+            db.Entry(test).State = EntityState.Modified;
         }
 
-        public IEnumerable<TestTable> Find(Func<TestTable, Boolean> predicate)
+        public IEnumerable<Test> Find(Func<Test, Boolean> predicate)
         {
-            return db.TestTables.Where(predicate).ToList();
+            return db.Tests.Where(predicate).ToList();
         }
 
         public void Delete(int id)
         {
-            TestTable testTable = db.TestTables.Find(id);
-            if (testTable != null)
-                db.TestTables.Remove(testTable);
+            Test test = db.Tests.Find(id);
+            if (test != null)
+                db.Tests.Remove(test);
         }
     }
 }

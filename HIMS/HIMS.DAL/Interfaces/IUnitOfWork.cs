@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using HIMS.EntityClasses;
+using HIMS.Data.EntityClasses;
 
-namespace HIMS.DAL.Interfaces
+namespace HIMS.Data.Interfaces
 {
     public interface IUnitOfWork : IDisposable
     {
-        IRepository<TestTable> TestTables { get; }
+        IRepository<Test> Tests { get; }
         void Save();
     }
 }

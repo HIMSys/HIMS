@@ -6,9 +6,9 @@ using System.ComponentModel;
 using System.Runtime.Serialization;
 using System.Xml.Serialization;
 using System.Collections;
-using HIMS;
+using HIMS.Data;
 
-namespace HIMS.EntityClasses
+namespace HIMS.Data.EntityClasses
 {
 	/// <summary>Class which is the common base class for all generated entity classes.</summary>
 	/// <remarks>As all non-subtype entity classes derive from this class, use a partial class of this class to implement code which is shared among all generated entity classes</remarks>

@@ -6,15 +6,15 @@
 					Provider="System.Data.SqlClient" ProviderManifestToken="2014"
 					xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
 				<EntityContainer Name="HIMSSQLServerContainer">
-					<EntitySet Name="TestTable" EntityType="Self.TestTable" Schema="dbo" />
+					<EntitySet Name="Test" EntityType="Self.Test" Schema="dbo" />
 	<!-- __LLBLGENPRO_USER_CODE_REGION_START SSDLEntityContainerCustomCode -->
 	<!-- __LLBLGENPRO_USER_CODE_REGION_END -->
 				</EntityContainer>
-				<EntityType Name="TestTable">
+				<EntityType Name="Test">
 					<Key>
-						<PropertyRef Name="TestTableId"/>
+						<PropertyRef Name="TestId"/>
 					</Key>
-					<Property Name="TestTableId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" DefaultValue="1"  />
+					<Property Name="TestId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" DefaultValue="1"  />
 					<Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="25"  />
 					<Property Name="Description" Type="nvarchar" MaxLength="255"  />
 				</EntityType>
@@ -25,17 +25,17 @@
 		<edmx:ConceptualModels>
 			<Schema Namespace="HIMSModel" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2009/11/edm"	 xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration"  xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false" >
 				<EntityContainer Name="HIMSEntities">
-					<EntitySet Name="TestTable" EntityType="Self.TestTable"/>	
+					<EntitySet Name="Test" EntityType="Self.Test"/>	
 	<!-- __LLBLGENPRO_USER_CODE_REGION_START CSDLEntityContainerCustomCode -->
 	<!-- __LLBLGENPRO_USER_CODE_REGION_END -->
 				</EntityContainer>
-				<EntityType Name="TestTable">
+				<EntityType Name="Test">
 					<Key>
-						<PropertyRef Name="TestTableId"/>
+						<PropertyRef Name="TestId"/>
 					</Key>
 					<Property Name="Description"  Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
 					<Property Name="Name" Nullable="false"  Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
-					<Property Name="TestTableId" Nullable="false"  Type="Int32" />
+					<Property Name="TestId" Nullable="false"  Type="Int32" />
 				</EntityType>
 	<!-- __LLBLGENPRO_USER_CODE_REGION_START CSDLCustomCode -->
 	<!-- __LLBLGENPRO_USER_CODE_REGION_END -->
@@ -45,10 +45,10 @@
 			<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
 				<EntityContainerMapping StorageEntityContainer="HIMSSQLServerContainer"
 										CdmEntityContainer="HIMSEntities">
-					<EntitySetMapping Name="TestTable">
-						<EntityTypeMapping TypeName="IsTypeOf(HIMSModel.TestTable)">
-							<MappingFragment StoreEntitySet="TestTable">
-								<ScalarProperty Name="TestTableId" ColumnName="TestTableId" />
+					<EntitySetMapping Name="Test">
+						<EntityTypeMapping TypeName="IsTypeOf(HIMSModel.Test)">
+							<MappingFragment StoreEntitySet="Test">
+								<ScalarProperty Name="TestId" ColumnName="TestId" />
 								<ScalarProperty Name="Name" ColumnName="Name" />
 								<ScalarProperty Name="Description" ColumnName="Description" />
 							</MappingFragment>

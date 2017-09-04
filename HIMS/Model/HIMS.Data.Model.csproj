@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{F37F413D-9B86-4DE2-B07B-27D8D13B05F3}</ProjectGuid>
+    <ProjectGuid>{C460D18B-5B7D-4AAE-8C7C-2CEBCBA1872D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HIMS</RootNamespace>
-    <AssemblyName>HIMS.Model</AssemblyName>
+    <RootNamespace>HIMS.Data</RootNamespace>
+    <AssemblyName>HIMS.Data.Model</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -46,7 +46,7 @@
     <Compile Include="Properties\AssemblyInfo.cs">
       <GeneratedBy>LLBLGen Pro</GeneratedBy>
     </Compile>
-    <Compile Include="EntityClasses\TestTable.cs">
+    <Compile Include="EntityClasses\Test.cs">
       <GeneratedBy>LLBLGen Pro</GeneratedBy>
     </Compile>
     <Compile Include="EntityClasses\CommonEntityBase.cs">

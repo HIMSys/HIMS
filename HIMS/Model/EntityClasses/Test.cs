@@ -8,15 +8,15 @@ using System.Xml.Serialization;
 using System.Collections.Specialized;
 using System.Collections.Generic;
 
-namespace HIMS.EntityClasses
+namespace HIMS.Data.EntityClasses
 {
-	/// <summary>Class which represents the entity 'TestTable'.</summary>
+	/// <summary>Class which represents the entity 'Test'.</summary>
 	[Serializable]
 	[DataContract(IsReference=true)]
-	public partial class TestTable : CommonEntityBase
+	public partial class Test : CommonEntityBase
 	{
-		/// <summary>Initializes a new instance of the <see cref="TestTable"/> class.</summary>
-		public TestTable() : base()
+		/// <summary>Initializes a new instance of the <see cref="Test"/> class.</summary>
+		public Test() : base()
 		{
 		}
 
@@ -27,9 +27,9 @@ namespace HIMS.EntityClasses
 		/// <summary>Gets or sets the Name field. </summary>
 		[DataMember]
 		public System.String Name { get; set;}
-		/// <summary>Gets or sets the TestTableId field. </summary>
+		/// <summary>Gets or sets the TestId field. </summary>
 		[DataMember]
-		public System.Int32 TestTableId { get; set;}
+		public System.Int32 TestId { get; set;}
 		#endregion
 	}
 }

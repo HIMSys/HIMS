@@ -31,10 +31,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0-beta1\lib\net45\EntityFramework.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0-beta1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -58,13 +58,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Model\HIMS.Model.csproj">
-      <Project>{f37f413d-9b86-4de2-b07b-27d8d13b05f3}</Project>
-      <Name>HIMS.Model</Name>
+    <ProjectReference Include="..\Model\HIMS.Data.Model.csproj">
+      <Project>{c460d18b-5b7d-4aae-8c7c-2cebcba1872d}</Project>
+      <Name>HIMS.Data.Model</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Persistence\HIMS.Persistence.csproj">
-      <Project>{5b443fd3-9468-4a92-b351-84abd06ab894}</Project>
-      <Name>HIMS.Persistence</Name>
+    <ProjectReference Include="..\Persistence\HIMS.Data.Persistence.csproj">
+      <Project>{6da7e92f-dbef-4451-b057-c27b700df732}</Project>
+      <Name>HIMS.Data.Persistence</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -12,9 +12,9 @@ using System.Data.Entity.Core.Objects.DataClasses;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
 using System.Linq;
-using HIMS.EntityClasses;
+using HIMS.Data.EntityClasses;
 
-namespace HIMS
+namespace HIMS.Data
 {
 	/// <summary>Class which represents the DataContext for the project / group 'HIMS'</summary>
 	public partial class HIMSDataContext : DbContext 
@@ -58,8 +58,8 @@ namespace HIMS
 		
 
 		#region Class Property Declarations
-		/// <summary>Gets an object query for the entity set 'TestTable', containing entity type 'TestTable'</summary>
-		public DbSet<TestTable> TestTables { get; set; } 
+		/// <summary>Gets an object query for the entity set 'Test', containing entity type 'Test'</summary>
+		public DbSet<Test> Tests { get; set; } 
 		#endregion
 	}
 }
