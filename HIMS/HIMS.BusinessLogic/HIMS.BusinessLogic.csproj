@@ -40,7 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessModels\WordsAmount.cs" />
     <Compile Include="DTO\TestTransferModel.cs" />
+    <Compile Include="Infrastructure\ValidationException.cs" />
+    <Compile Include="Interfaces\ITestService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
