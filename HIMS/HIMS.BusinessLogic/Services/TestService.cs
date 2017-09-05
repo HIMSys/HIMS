@@ -8,11 +8,11 @@ using HIMS.BusinessLogic.DTO;
 using HIMS.BusinessLogic.Infrastructure;
 using HIMS.Data.EntityClasses;
 using HIMS.Data.Interfaces;
-using HIMS.Interfaces.BusinessLogic;
+using HIMS.BusinessLogic.Interfaces;
 
 namespace HIMS.BusinessLogic.Services
 {
-    class TestService : ITestService
+    public class TestService : ITestService
     {
         IUnitOfWork Database { get; set; }
 
