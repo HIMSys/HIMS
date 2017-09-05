@@ -6,7 +6,7 @@ using System.Net.Http;
 using System.Web.Http;
 using AutoMapper;
 using HIMS.BusinessLogic.DTO;
-using HIMS.Interfaces.BusinessLogic;
+using HIMS.BusinessLogic.Interfaces;
 using HIMS.WebAPI.Models;
 
 namespace HIMS.WebAPI.Controllers
