@@ -3,7 +3,7 @@
 	<edmx:Runtime>
 		<edmx:StorageModels>
 			<Schema Namespace="HIMS.SQLServer.Store" Alias="Self" 
-					Provider="System.Data.SqlClient" ProviderManifestToken="2014"
+					Provider="System.Data.SqlClient" ProviderManifestToken="2012"
 					xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
 				<EntityContainer Name="HIMSSQLServerContainer">
 					<EntitySet Name="Test" EntityType="Self.Test" Schema="dbo" />
@@ -48,9 +48,9 @@
 					<EntitySetMapping Name="Test">
 						<EntityTypeMapping TypeName="IsTypeOf(HIMSModel.Test)">
 							<MappingFragment StoreEntitySet="Test">
-								<ScalarProperty Name="TestId" ColumnName="TestId" />
-								<ScalarProperty Name="Name" ColumnName="Name" />
 								<ScalarProperty Name="Description" ColumnName="Description" />
+								<ScalarProperty Name="Name" ColumnName="Name" />
+								<ScalarProperty Name="TestId" ColumnName="TestId" />
 							</MappingFragment>
 						</EntityTypeMapping>
 					</EntitySetMapping>

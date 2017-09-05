@@ -56,19 +56,19 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Properties\AssemblyInfo.cs">
-      <GeneratedBy>LLBLGen Pro</GeneratedBy>
-    </Compile>
-    <Compile Include="HIMSDataContext.cs">
-      <GeneratedBy>LLBLGen Pro</GeneratedBy>
-    </Compile>
+    <None Include="packages.config" />
     <None Include="app.config">
       <GeneratedBy>LLBLGen Pro</GeneratedBy>
     </None>
     <EntityDeploy Include="HIMS.edmx">
       <GeneratedBy>LLBLGen Pro</GeneratedBy>
     </EntityDeploy>
-    <None Include="packages.config" />
+    <Compile Include="HIMSDataContext.cs">
+      <GeneratedBy>LLBLGen Pro</GeneratedBy>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <GeneratedBy>LLBLGen Pro</GeneratedBy>
+    </Compile>
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSHARP.Targets" />
