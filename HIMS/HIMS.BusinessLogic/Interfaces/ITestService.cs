@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using HIMS.BusinessLogic.DTO;
 
-namespace HIMS.Interfaces.BusinessLogic
+namespace HIMS.BusinessLogic.Interfaces
 {
     public interface ITestService
     {
