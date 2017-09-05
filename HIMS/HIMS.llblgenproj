@@ -107,7 +107,7 @@
   </CodeGenerationCyclePreferences>
   <OutputSettingValues>
     <SettingValues>
-      <SettingValue Name="1:ProviderManifestTokenValue" Value="2014" Type="18" />
+      <SettingValue Name="1:ProviderManifestTokenValue" Value="2012" Type="18" />
     </SettingValues>
   </OutputSettingValues>
   <CodeGenerationMetaDataDefaults>
@@ -212,7 +212,7 @@
       <Catalogs>
         <Catalog Name="HIMSDB">
           <Schemas>
-            <Schema Name="dbo" SyncSource="2" LastSyncWithDatabase="2017-09-04T18:59:56.7323878Z">
+            <Schema Name="dbo" SyncSource="2" LastSyncWithDatabase="2017-09-05T06:42:31.9357956Z">
               <Tables>
                 <Table Name="Test">
                   <PkConstraintName Name="PK_Test" />
