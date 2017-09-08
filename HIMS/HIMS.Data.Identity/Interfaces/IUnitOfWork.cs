@@ -7,7 +7,7 @@ using HIMS.Data.Identity.Identity;
 
 namespace HIMS.Data.Identity.Interfaces
 {
-    public interface IUnitOfWork
+    public interface IUnitOfWork : IDisposable
     {
         UserSecurityManager UserSecurityManager { get; }
         ApplicationRoleManager RoleManager { get; }

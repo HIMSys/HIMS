@@ -46,7 +46,7 @@ namespace HIMS.WebAPI.App_Start
         /// <returns>The created kernel.</returns>
         private static IKernel CreateKernel()
         {
-            var modules = new INinjectModule[] { new ServiceModule("HimsDbConnection") };
+            var modules = new INinjectModule[] { new ServiceModule("name=HimsDbConnection", "name=HimsIdentityConnection") };
             var kernel = new StandardKernel(modules);
             try
             {
