@@ -41,6 +41,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "HIMS.Client", "HIMS.Client\
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "22394"
+		SlnRelativePath = "HIMS.Client\"
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
