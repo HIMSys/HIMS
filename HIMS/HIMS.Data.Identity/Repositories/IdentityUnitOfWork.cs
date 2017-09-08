@@ -25,7 +25,7 @@ namespace HIMS.Data.Identity.Repositories
             _roleManager = new ApplicationRoleManager(new RoleStore<ApplicationRole>(_db));
         }
 
-        public UserSecurityManager UserManager
+        public UserSecurityManager UserSecurityManager
         {
             get { return _userManager; }
         }
