@@ -71,6 +71,7 @@ namespace HIMS.WebAPI.App_Start
         private static void RegisterServices(IKernel kernel)
         {
             kernel.Bind<ITestService>().To<TestService>();
+            kernel.Bind<IUserService>().To<UserService>();
         }        
     }
 }

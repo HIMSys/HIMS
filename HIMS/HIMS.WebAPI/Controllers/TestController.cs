@@ -20,7 +20,9 @@ namespace HIMS.WebAPI.Controllers
             _testService = testService;
         }
 
-        public IHttpActionResult GetTest()
+        [Authorize(Roles = "admin")]
+        [HttpGet]
+        public IHttpActionResult Test()
         {
             IEnumerable<TestTransferModel> testDtos = _testService.GetTests();
             Mapper.Initialize(cfg => cfg.CreateMap<TestTransferModel, TestViewModel>());
