@@ -84,13 +84,13 @@ namespace HIMS.WebAPI.Controllers
         {
             await _userService.SetInitialData(new UserTransferModel
             {
-                Email = "somemail@mail.ru",
-                UserName = "somemail@mail.ru",
-                Password = "ad46D_ewr3",
-                Name = "Семен Семенович Горбунков",
-                Address = "ул. Спортивная, д.30, кв.75",
+                Email = "alex.meleschenko@gmail.com",
+                UserName = "Alex",
+                Password = "admin",
+                Name = "Alexander Meleschenko",
+                Address = "Minsk, The Repablic of Belarus",
                 Role = "admin",
-            }, new List<string> { "user", "admin" });
+            }, new List<string> { "user", "mentor", "admin" });
         }
     }
 }
