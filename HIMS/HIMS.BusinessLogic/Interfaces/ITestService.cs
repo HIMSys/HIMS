@@ -12,6 +12,7 @@ namespace HIMS.BusinessLogic.Interfaces
         void SaveTest(TestTransferModel testTM);
         TestTransferModel GetTest(int? id);
         IEnumerable<TestTransferModel> GetTests();
+        void DeleteTest(int? id);
         void Dispose();
     }
 }

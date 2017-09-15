@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using AutoMapper;
 using HIMS.BusinessLogic.DTO;
 using HIMS.BusinessLogic.Interfaces;
@@ -11,6 +12,7 @@ using HIMS.WebAPI.Models;
 
 namespace HIMS.WebAPI.Controllers
 {
+    [EnableCorsAttribute("http://localhost:22394", "*", "*", SupportsCredentials = true)]
     public class TestController : ApiController
     {
         ITestService _testService;
@@ -28,6 +30,22 @@ namespace HIMS.WebAPI.Controllers
             Mapper.Initialize(cfg => cfg.CreateMap<TestTransferModel, TestViewModel>());
             var phones = Mapper.Map<IEnumerable<TestTransferModel>, List<TestViewModel>>(testDtos);
             return Ok(phones);
+        }
+
+        [Authorize(Roles = "admin")]
+        [HttpPost]
+        public IHttpActionResult AddTest(TestTransferModel test)
+        {
+            _testService.SaveTest(test);
+            return Ok();
+        }
+
+        [Authorize(Roles = "admin")]
+        [HttpPost]
+        public IHttpActionResult DeleteTest([FromBody]int? id)
+        {
+            _testService.DeleteTest(id);
+            return Ok();
         }
     }
 }

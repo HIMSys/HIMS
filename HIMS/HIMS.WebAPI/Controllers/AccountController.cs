@@ -9,9 +9,11 @@ using HIMS.BusinessLogic.DTO;
 using System.Security.Claims;
 using HIMS.BusinessLogic.Infrastructure;
 using System.Collections.Generic;
+using System.Web.Http.Cors;
 
 namespace HIMS.WebAPI.Controllers
 {
+    [EnableCorsAttribute("http://localhost:22394", "*", "*", SupportsCredentials = true)]
     public class AccountController : ApiController
     {
         IUserService _userService;
@@ -43,7 +45,7 @@ namespace HIMS.WebAPI.Controllers
                     {
                         IsPersistent = true
                     }, claim);
-                    return Ok("Login successful");
+                    return Ok(" successful!");
                 }
             }
             return NotFound();
@@ -86,7 +88,7 @@ namespace HIMS.WebAPI.Controllers
             {
                 Email = "alex.meleschenko@gmail.com",
                 UserName = "Alex",
-                Password = "admin",
+                Password = "admin123",
                 Name = "Alexander Meleschenko",
                 Address = "Minsk, The Repablic of Belarus",
                 Role = "admin",

@@ -60,6 +60,15 @@ namespace HIMS.BusinessLogic.Services
             return Mapper.Map<Test, TestTransferModel>(test);
         }
 
+        public void DeleteTest(int? id)
+        {
+            if (!id.HasValue)
+                throw new ValidationException("The Test's id value is not set", String.Empty);
+
+            Database.Tests.Delete(id.Value);
+            Database.Save();
+        }
+
         public void Dispose()
         {
             Database.Dispose();
