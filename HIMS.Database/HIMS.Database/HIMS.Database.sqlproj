@@ -59,9 +59,11 @@
     <Folder Include="Properties" />
     <Folder Include="Tables" />
     <Folder Include="SeedData" />
+    <Folder Include="Max_Tables" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\Test.sql" />
+    <Build Include="Max_Tables\Contact.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="SeedData\Test.sql" />
