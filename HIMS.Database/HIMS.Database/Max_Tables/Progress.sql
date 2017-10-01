@@ -7,5 +7,5 @@
 	[SubtaskId] INT, 
 
 	CONSTRAINT PK_Progress PRIMARY KEY ([Id]),
-	CONSTRAINT FK_Progress_To_ProgressSubtask FOREIGN KEY (SubtaskId) REFERENCES ProgressSubtask(Id)
+	CONSTRAINT FK_Progress_To_ProgressSubtask FOREIGN KEY (SubtaskId) REFERENCES ProgressSubtask(Id) ON DELETE CASCADE
 )
