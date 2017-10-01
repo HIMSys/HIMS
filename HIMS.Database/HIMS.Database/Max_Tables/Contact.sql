@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[Contact]
 (
-	[Id] INT NOT NULL,
+	[Id] INT IDENTITY(1,1) NOT NULL,
 	[AddressId] INT NOT NULL,
 	[PhoneId] INT NOT NULL,
 

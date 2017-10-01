@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[Subtask]
 (
-	[Id] INT NOT NULL,
+	[Id] INT IDENTITY(1,1) NOT NULL,
 	[Name] NVARCHAR(50) NOT NULL,
 	[Description] NVARCHAR(MAX),
 	[StartDate] NVARCHAR(50),

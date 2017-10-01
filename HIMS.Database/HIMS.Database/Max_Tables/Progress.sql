@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[Progress]
 (
-	[Id] INT NOT NULL,
+	[Id] INT IDENTITY(1,1) NOT NULL,
 	[Date] NVARCHAR(50) NOT NULL,
 	[Note] NVARCHAR(MAX) NOT NULL,
 	[TimeStamp] TIMESTAMP NOT NULL, 
