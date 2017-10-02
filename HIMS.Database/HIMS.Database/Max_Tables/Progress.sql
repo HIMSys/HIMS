@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[Progress]
 (
 	[Id] INT IDENTITY(1,1) NOT NULL,
-	[Date] NVARCHAR(50) NOT NULL,
+	[Date] Date NOT NULL,
 	[Note] NVARCHAR(MAX) NOT NULL,
 	[TimeStamp] TIMESTAMP NOT NULL, 
 	[SubtaskId] INT, 
