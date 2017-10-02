@@ -70,6 +70,7 @@
     <Build Include="Tables\UserTask.sql" />
     <Build Include="Tables\Address.sql" />
     <Build Include="Tables\Phone.sql" />
+    <Build Include="Tables\KnowledgeTest.sql" />
     <Build Include="Tables\Test.sql" />
   </ItemGroup>
   <ItemGroup>
