@@ -5,7 +5,7 @@
     [Description] NVARCHAR(255) NOT NULL, 
     [TimeStamp] TIMESTAMP NOT NULL, 
     [Deadline] DATETIME NULL DEFAULT NULL, 
-	--DEFAULT NULL seems "no deadline"
+	--DEFAULT NULL means "no deadline"
     [StartDate] DATETIME NOT NULL,
 
 	CONSTRAINT [PK_Task] PRIMARY KEY ([Id])
