@@ -67,8 +67,16 @@
     <Build Include="Max_Tables\Progress.sql" />
     <Build Include="Max_Tables\Subtask.sql" />
     <Build Include="Max_Tables\KnowledgeAssessment.sql" />
+    <Build Include="Tables\Task.sql" />
+    <Build Include="Tables\UserTask.sql" />
+    <Build Include="Tables\Address.sql" />
+    <Build Include="Tables\Phone.sql" />
+    <Build Include="Tables\TestType.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="SeedData\Test.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="HIMS.Database.refactorlog" />
   </ItemGroup>
 </Project>
