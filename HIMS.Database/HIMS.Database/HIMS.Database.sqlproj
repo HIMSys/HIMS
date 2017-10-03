@@ -72,6 +72,10 @@
     <Build Include="Tables\Phone.sql" />
     <Build Include="Tables\KnowledgeTest.sql" />
     <Build Include="Tables\Test.sql" />
+    <Build Include="Tables\TestType.sql" />
+    <Build Include="Tables\Todo.sql" />
+    <Build Include="Tables\UserProfile.sql" />
+    <Build Include="Tables\ProgressSubtask.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="SeedData\Test.sql" />
