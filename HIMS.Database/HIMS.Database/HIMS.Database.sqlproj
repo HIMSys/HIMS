@@ -59,19 +59,18 @@
     <Folder Include="Properties" />
     <Folder Include="Tables" />
     <Folder Include="SeedData" />
-    <Folder Include="Max_Tables" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\Test.sql" />
-    <Build Include="Max_Tables\Contact.sql" />
-    <Build Include="Max_Tables\Progress.sql" />
-    <Build Include="Max_Tables\Subtask.sql" />
-    <Build Include="Max_Tables\KnowledgeAssessment.sql" />
     <Build Include="Tables\Task.sql" />
     <Build Include="Tables\UserTask.sql" />
     <Build Include="Tables\Address.sql" />
     <Build Include="Tables\Phone.sql" />
     <Build Include="Tables\TestType.sql" />
+    <Build Include="Tables\Subtask.sql" />
+    <Build Include="Tables\Contact.sql" />
+    <Build Include="Tables\KnowledgeAssessment.sql" />
+    <Build Include="Tables\Progress.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="SeedData\Test.sql" />
