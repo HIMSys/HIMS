@@ -1,15 +1,20 @@
 ﻿CREATE TABLE [dbo].[UserProfile]
 (
 	[Id] INT NOT NULL,
-	[LastName] NVARCHAR(25) NOT NULL,
 	[ContactId] INT NOT NULL,
+	[DirectionId] INT NOT NULL,
+	[Name] NVARCHAR(25) NOT NULL,
+	[LastName] NVARCHAR(25) NOT NULL,
 	[Sex] CHAR(1) NOT NULL,
 	[Education] NVARCHAR(100) NOT NULL,
 	[Birthday] DATE NOT NULL,
-	[KnowledgeAssessmentId] INT NOT NULL
+	[AverageScore] FLOAT NULL,
+	[MathScore] FLOAT NULL
 
 	CONSTRAINT [PK_UserProfile] PRIMARY KEY ([Id]),
-	CONSTRAINT [FK_UserProfile_To_KnowledgeAssessment] FOREIGN KEY ([KnowledgeAssessmentId]) REFERENCES [KnowledgeAssessment]([Id]),
+	CONSTRAINT [Unique_ContactId] UNIQUE ([ContactId]),
+	CONSTRAINT [FK_UserProfile_To_Contact] FOREIGN KEY ([ContactId]) REFERENCES [Contact]([Id]),
+	CONSTRAINT [FK_UserProfile_To_Direction] FOREIGN KEY ([DirectionId]) REFERENCES [Direction]([Id])
 )
 
 GO
@@ -25,7 +30,7 @@ CREATE TRIGGER [dbo].[CrossDB_FK_Trigger]
         SELECT * FROM INSERTED AS I
         WHERE NOT EXISTS (
             SELECT *
-            FROM [OtherDatabase].[dbo].[UserSecurity] AS A
+            FROM [HIMSIntityDB].[dbo].[AspNetUsers] AS A
             WHERE I.Id = A.Id
 			)
 		)
