@@ -21,4 +21,11 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="KnowledgeTestId" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="08b5932e-e60b-4b07-8c96-34bb0fe936e1" ChangeDateTime="10/05/2017 18:26:09">
+    <Property Name="ElementName" Value="[dbo].[ProgressSubtask].[ProgrssId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ProgressSubtask]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ProgressId" />
+  </Operation>
 </Operations>
