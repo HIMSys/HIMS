@@ -78,6 +78,10 @@
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="SeedData\Test.sql" />
+    <None Include="SeedData\Address.sql" />
+    <None Include="SeedData\Progress.sql" />
+    <None Include="SeedData\KnowledgeTest.sql" />
+    <None Include="SeedData\UserProfile.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="HIMS.Database.refactorlog" />
