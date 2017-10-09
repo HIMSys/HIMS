@@ -1,8 +1,8 @@
 ﻿CREATE TABLE [dbo].[UserProfile]
 (
-	[Id] INT NOT NULL,
-	[ContactId] INT NOT NULL,
-	[DirectionId] INT NOT NULL,
+	[Id] INT IDENTITY(1,1) NOT NULL,
+	[ContactId] INT NULL,
+	[DirectionId] INT NULL,
 	[Name] NVARCHAR(25) NOT NULL,
 	[LastName] NVARCHAR(25) NOT NULL,
 	[Sex] CHAR(1) NOT NULL,
@@ -13,8 +13,8 @@
 
 	CONSTRAINT [PK_UserProfile] PRIMARY KEY ([Id]),
 	CONSTRAINT [Unique_ContactId] UNIQUE ([ContactId]),
-	CONSTRAINT [FK_UserProfile_To_Contact] FOREIGN KEY ([ContactId]) REFERENCES [Contact]([Id]),
-	CONSTRAINT [FK_UserProfile_To_Direction] FOREIGN KEY ([DirectionId]) REFERENCES [Direction]([Id])
+	CONSTRAINT [FK_UserProfile_To_Contact] FOREIGN KEY ([ContactId]) REFERENCES [Contact]([Id]) ON DELETE SET NULL,
+	CONSTRAINT [FK_UserProfile_To_Direction] FOREIGN KEY ([DirectionId]) REFERENCES [Direction]([Id]) ON DELETE SET NULL
 )
 
 GO
