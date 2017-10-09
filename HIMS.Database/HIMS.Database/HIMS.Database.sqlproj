@@ -83,6 +83,11 @@
     <None Include="SeedData\Progress.sql" />
     <None Include="SeedData\KnowledgeTest.sql" />
     <None Include="SeedData\UserProfile.sql" />
+    <None Include="SeedData\Todo.sql" />
+    <None Include="SeedData\ProgressSubtask.sql" />
+    <None Include="SeedData\TodoSubtask.sql" />
+    <None Include="SeedData\Contact.sql" />
+    <None Include="SeedData\Direction.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="HIMS.Database.refactorlog" />
