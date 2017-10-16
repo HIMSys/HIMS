@@ -88,6 +88,11 @@
     <None Include="SeedData\TodoSubtask.sql" />
     <None Include="SeedData\Contact.sql" />
     <None Include="SeedData\Direction.sql" />
+    <None Include="SeedData\Subtask.sql" />
+    <None Include="SeedData\Task.sql" />
+    <None Include="SeedData\UserTask.sql" />
+    <None Include="SeedData\Phone.sql" />
+    <None Include="SeedData\TestType.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="HIMS.Database.refactorlog" />

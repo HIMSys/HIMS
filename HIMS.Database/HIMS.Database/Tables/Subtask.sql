@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[Subtask]
 (
 	[Id] INT IDENTITY(1,1) NOT NULL,
-	[UserTaskId] INT NULL,
+	[UserTaskId] INT NOT NULL,
 	[Name] NVARCHAR(50) NOT NULL,
 	[Description] NVARCHAR(MAX), --optional
 	[StartDate] Date NULL DEFAULT NULL,            --optional
@@ -13,5 +13,5 @@
 	[TimeStamp] TIMESTAMP NOT NULL,
 
 	CONSTRAINT PK_Subtask PRIMARY KEY ([Id]),
-	CONSTRAINT FK_Subtask_UserTask FOREIGN KEY ([UserTaskId]) REFERENCES [UserTask]([Id]) ON DELETE SET NULL
+	CONSTRAINT FK_Subtask_UserTask FOREIGN KEY ([UserTaskId]) REFERENCES [UserTask]([Id]) ON DELETE CASCADE ON UPDATE CASCADE
 )

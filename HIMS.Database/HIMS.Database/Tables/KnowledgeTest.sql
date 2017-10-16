@@ -2,7 +2,7 @@
 (
 	[Id] INT IDENTITY(1,1) NOT NULL, 
 	[UserId] INT NOT NULL,
-    [TestTypeId] INT NOT NULL, 
+    [TestTypeId] INT NULL, 
     [Result] FLOAT NULL, 
     [TestDate] DATE NULL
 	
