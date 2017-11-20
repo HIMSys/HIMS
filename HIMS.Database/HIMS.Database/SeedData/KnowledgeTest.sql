@@ -1,4 +1,4 @@
-﻿INSERT INTO [dbo].[Progress]
+﻿INSERT INTO [dbo].[KnowledgeTest]
 	([UserId], [TestTypeId], [Result], [TestDate])
 	VALUES
 	(1, 1, 93,'2017-10-9'),

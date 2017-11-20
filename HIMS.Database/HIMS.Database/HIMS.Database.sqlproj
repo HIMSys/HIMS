@@ -59,6 +59,10 @@
     <Folder Include="Properties" />
     <Folder Include="Tables" />
     <Folder Include="SeedData" />
+    <Folder Include="Views" />
+    <Folder Include="Procedures" />
+    <Folder Include="Functions" />
+    <Folder Include="Triggers" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\Contact.sql" />
@@ -76,6 +80,10 @@
     <Build Include="Tables\ProgressSubtask.sql" />
     <Build Include="Tables\TodoSubtask.sql" />
     <Build Include="Tables\Direction.sql" />
+    <Build Include="Views\MemberProfileGrid.sql" />
+    <Build Include="Procedures\GetTests.sql" />
+    <Build Include="Functions\GetCurrentUserProfileId.sql" />
+    <Build Include="Triggers\CrossDB_FK_Trigger.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="SeedData\Test.sql" />

@@ -1,4 +1,4 @@
-﻿INSERT INTO [dbo].[Progress]
+﻿INSERT INTO [dbo].[UserProfile]
 	([ContactId], [DirectionId], [Name], [LastName], [Sex], [Education], [Birthday], [AverageScore], [MathScore])
 	VALUES
 	(1, 1, 'User1', 'LastName1', 'M', 'BSUIR Highest Technical Education', '1996-07-06', 9, 75),

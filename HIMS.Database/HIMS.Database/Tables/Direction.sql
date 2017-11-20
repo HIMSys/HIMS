@@ -5,5 +5,4 @@
     [Description] NVARCHAR(255) NULL,
 
 	CONSTRAINT [PK_Direction] PRIMARY KEY ([Id]),
-	
 )
